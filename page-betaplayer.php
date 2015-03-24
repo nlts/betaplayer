@@ -12,7 +12,6 @@
 	<script type="text/javascript" src="<?php bloginfo('wpurl'); ?>/wp-content/plugins/song-request/widget.js"></script>
 	<script type="text/javascript" src="<?php bloginfo('template_url'); ?>/script/soundmanager2.js"></script>
 	<script type="text/javascript" src="<?php bloginfo('template_url'); ?>/script/bar-ui.js"></script>
-	<script type="text/javascript" src="<?php bloginfo('template_url'); ?>/js/player.js"></script>
 	<style type="text/css">
 		#player-logo { background: url('<?php bloginfo('template_directory'); ?>/images/tinylogopurple.png'); width: 110px; height: 110px; display: block }
 		#player-logo img {
@@ -89,7 +88,17 @@
 	//]]></script>
 </head>
 <?php $stream = $_GET["stream"];
-$streamclass = ($stream == "hd2")?"hd2":"onair"; ?>
+$streamclass = ($stream == "hd2")?"hd2":"onair"; 
+	switch($_GET["stream"]) {
+		case "hd2":
+			$stream_url = "http://streaming.wrek.org:8000/wrek_HD-2";
+			break;
+		case "24kbps":
+			$stream_url = "http://streaming.wrek.org:8000/wrek_live-24kb-mono";
+			break;
+		default:
+			$stream_url = "http://streaming.wrek.org:8000/wrek_live-128kb";
+?>
 <body id="stream-player">
 	<div class="container_18" id="<?=$streamclass?>">
 		<div class="grid_9 suffix_1" id="player-left">
@@ -122,6 +131,7 @@ $streamclass = ($stream == "hd2")?"hd2":"onair"; ?>
 				</div>
 			</div>
 			-->
+
 			<div class="sm2-bar-ui  flat full-width">
 			 <div class="bd sm2-main-controls">
 			  <div class="sm2-inline-texture"></div>
@@ -157,7 +167,7 @@ $streamclass = ($stream == "hd2")?"hd2":"onair"; ?>
 			  <div class="sm2-playlist-wrapper">
 			    <ul class="sm2-playlist-bd">
 			    <li id="onair">
-			      <a href="http://streaming.wrek.org:8000/main/<?=$stream?>.mp3">
+			      <a href=<?=$stream_url?>>
 			        <b><span id="stream-show"></span></b>
 			        <span id="stream-song"></span>
 			      </a>
@@ -189,5 +199,6 @@ $streamclass = ($stream == "hd2")?"hd2":"onair"; ?>
 			</ul>
 		</div>
 	</div>
+	<script type="text/javascript" src="<?php bloginfo('template_url'); ?>/js/player.js"></script>
 </body>
 </html>
