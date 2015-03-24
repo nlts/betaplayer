@@ -6,7 +6,7 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1"/>
 	<link rel="stylesheet" href="<?php bloginfo('stylesheet_url'); ?>" type="text/css" media="screen" />
 	<link rel="stylesheet" href="<?php bloginfo('stylesheet_directory'); ?>/grid_player.css" type="text/css" media="screen" />
-	<link rel="stylesheet" href="<?php bloginfo('template_url'); ?>css/bar-ui.css" type="text/css" media="screen" />
+	<link rel="stylesheet" href="<?php bloginfo('template_url'); ?>/css/bar-ui.css" type="text/css" media="screen" />
 	<?php wp_enqueue_script('jquery'); ?>
 	<script type="text/javascript" src="http://www3.eng.wrek.org/wp-includes/js/jquery/jquery.js"></script>
 	<script type="text/javascript" src="<?php bloginfo('wpurl'); ?>/wp-content/plugins/song-request/widget.js"></script>
