@@ -1,4 +1,4 @@
-﻿/*jslint plusplus: true, white: true, nomen: true */
+/*jslint plusplus: true, white: true, nomen: true */
 /* global soundManager, document, console, window */
 
 (function(window) {
@@ -782,7 +782,7 @@
 	    var sound = soundManager.createSound({
 
 	      url: url,
-
+          autoPlay: true,
 	      whileplaying: function() {
 	        var progressMaxLeft = 100,
 	            left,

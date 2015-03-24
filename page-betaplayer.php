@@ -12,7 +12,6 @@
 	<script type="text/javascript" src="<?php bloginfo('wpurl'); ?>/wp-content/plugins/song-request/widget.js"></script>
 	<script type="text/javascript" src="<?php bloginfo('template_url'); ?>/script/soundmanager2.js"></script>
 	<script type="text/javascript" src="<?php bloginfo('template_url'); ?>/script/bar-ui.js"></script>
-	<script type="text/javascript" src="<?php bloginfo('template_url'); ?>/js/player.js"></script>
 	<style type="text/css">
 		#player-logo { background: url('<?php bloginfo('template_directory'); ?>/images/tinylogopurple.png'); width: 110px; height: 110px; display: block }
 		#player-logo img {
@@ -202,5 +201,6 @@ switch($stream) {
 			</ul>
 		</div>
 	</div>
+	<script type="text/javascript" src="<?php bloginfo('template_url'); ?>/js/player.js"></script>
 </body>
 </html>
