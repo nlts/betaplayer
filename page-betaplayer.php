@@ -7,6 +7,8 @@
 	<link rel="stylesheet" href="<?php bloginfo('stylesheet_url'); ?>" type="text/css" media="screen" />
 	<link rel="stylesheet" href="<?php bloginfo('stylesheet_directory'); ?>/grid_player.css" type="text/css" media="screen" />
 	<link rel="stylesheet" href="<?php bloginfo('template_url'); ?>/css/bar-ui.css" type="text/css" media="screen" />
+	<link rel="stylesheet" href="<?php bloginfo('template_url'); ?>/Skeleton-2.0.4/css/skeleton.css" type="text/css" media="screen" />
+	<link rel="stylesheet" href="<?php bloginfo('template_url'); ?>/Skeleton-2.0.4/css/normalize.css" type="text/css" media="screen" />
 	<?php wp_enqueue_script('jquery'); ?>
 	<script type="text/javascript" src="http://www3.eng.wrek.org/wp-includes/js/jquery/jquery.js"></script>
 	<script type="text/javascript" src="<?php bloginfo('wpurl'); ?>/wp-content/plugins/song-request/widget.js"></script>
@@ -74,6 +76,10 @@
 		.sm2-bar-ui .sm2-playlist-drawer {
 		 background-color: #2288cc;
 		}
+
+		.container {
+			max-width: 720px;
+		}
 	</style>
 	<script type="text/javascript">//<![CDATA[
 	// Google Analytics for WordPress by Yoast v4.1.3 | http://yoast.com/wordpress/google-analytics/
@@ -102,8 +108,8 @@ switch($stream) {
 ?>
 
 <body id="stream-player">
-	<div class="container_18" id="<?=$streamclass?>">
-		<div class="grid_9 suffix_1" id="player-left">
+	<div class="container" id="<?=$streamclass?>">
+		<div class="one-half column feature" id="player-left">
 			<div class="clearfix" id="player-top">
 				<a href="<?php echo home_url( '/' ); ?>" target="_blank" id="player-logo">
 					<img src="<?php bloginfo('template_directory'); ?>/images/tinylogo.png" alt="<?php bloginfo('name'); ?>" />
@@ -182,7 +188,7 @@ switch($stream) {
 			</div>
 
 		</div>
-		<div class="grid_8" id="sidebar">
+		<div class="one-half column feature" id="sidebar">
 			<div class="widget clearfix" id="stream-playlist">
 				<h4>Recent Tracks</h4>
 				<ul id="playlist">
