@@ -75,9 +75,6 @@
 		.sm2-bar-ui .sm2-playlist-drawer {
 		 background-color: #2288cc;
 		}
-		.sm2-bar-ui .sm2-inline-texture {
-		 background: url(image/patterns/textured_paper.png);
-		}
 	</style>
 	<script type="text/javascript">//<![CDATA[
 	// Google Analytics for WordPress by Yoast v4.1.3 | http://yoast.com/wordpress/google-analytics/
@@ -160,7 +157,7 @@ $streamclass = ($stream == "hd2")?"hd2":"onair"; ?>
 			  <div class="sm2-playlist-wrapper">
 			    <ul class="sm2-playlist-bd">
 			    <li id="onair">
-			      <a href="http://streaming.wrek.org:8000/main/128kb.mp3">
+			      <a href="http://streaming.wrek.org:8000/main/<?=$stream?>.mp3">
 			        <b><span id="stream-show"></span></b>
 			        <span id="stream-song"></span>
 			      </a>
