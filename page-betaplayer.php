@@ -76,6 +76,10 @@
 		.sm2-bar-ui .sm2-playlist-drawer {
 		 background-color: #2288cc;
 		}
+
+		.container {
+			max-width: 720px;
+		}
 	</style>
 	<script type="text/javascript">//<![CDATA[
 	// Google Analytics for WordPress by Yoast v4.1.3 | http://yoast.com/wordpress/google-analytics/
