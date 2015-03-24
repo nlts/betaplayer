@@ -1,13 +1,17 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml" lang="en-US">
+<!DOCTYPE html>
+<html lang="en-US">
 <head>
 	<title>WREK Live Stream</title>
 	<meta http-equiv="Content-Type" content="<?php bloginfo('html_type'); ?>; charset=<?php bloginfo('charset'); ?>" />	
+	<meta name="viewport" content="width=device-width, initial-scale=1"/>
 	<link rel="stylesheet" href="<?php bloginfo('stylesheet_url'); ?>" type="text/css" media="screen" />
 	<link rel="stylesheet" href="<?php bloginfo('stylesheet_directory'); ?>/grid_player.css" type="text/css" media="screen" />
+	<link rel="stylesheet" href="<?php bloginfo('template_url'); ?>css/bar-ui.css" type="text/css" media="screen" />
 	<?php wp_enqueue_script('jquery'); ?>
 	<script type="text/javascript" src="http://www3.eng.wrek.org/wp-includes/js/jquery/jquery.js"></script>
 	<script type="text/javascript" src="<?php bloginfo('wpurl'); ?>/wp-content/plugins/song-request/widget.js"></script>
+	<script type="text/javascript" src="<?php bloginfo('template_url'); ?>/script/bar-ui.js"></script>
+	<script type="text/javascript" src="<?php bloginfo('template_url'); ?>/script/soundmanager2.js"></script>
 	<script type="text/javascript" src="<?php bloginfo('template_url'); ?>/js/player.js"></script>
 	<style type="text/css">
 		#player-logo { background: url('<?php bloginfo('template_directory'); ?>/images/tinylogopurple.png'); width: 110px; height: 110px; display: block }
@@ -63,6 +67,17 @@
 		display: block;
 		*display: none; }
 		#stream-options a:hover #arrow { color: #fff; }
+
+		.sm2-bar-ui {
+		 font-size: 16px;
+		}
+		.sm2-bar-ui .sm2-main-controls,
+		.sm2-bar-ui .sm2-playlist-drawer {
+		 background-color: #2288cc;
+		}
+		.sm2-bar-ui .sm2-inline-texture {
+		 background: url(image/patterns/textured_paper.png);
+		}
 	</style>
 	<script type="text/javascript">//<![CDATA[
 	// Google Analytics for WordPress by Yoast v4.1.3 | http://yoast.com/wordpress/google-analytics/
