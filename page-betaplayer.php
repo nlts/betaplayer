@@ -77,6 +77,9 @@
 		 background-color: #2288cc;
 		}
 
+		.column {
+			width: 350px;
+		}
 		.container {
 			max-width: 720px;
 		}
