@@ -158,7 +158,17 @@ switch($stream) {
 			     <noscript><p>JavaScript is required.</p></noscript>
 			    </div>
 			   </div>
-			   <div class="sm2-progress">
+			   <div class="sm2-progress" style="display:none;">
+			    <div class="sm2-row">
+			    <div class="sm2-inline-time">0:00</div>
+			     <div class="sm2-progress-bd">
+			      <div class="sm2-progress-track">
+			       <div class="sm2-progress-bar"></div>
+			       <div class="sm2-progress-ball"><div class="icon-overlay"></div></div>
+			      </div>
+			     </div>
+			     <div class="sm2-inline-duration">0:00</div>
+			    </div>
 			   </div>
 			  </div>
 			  <div class="sm2-inline-element sm2-button-element sm2-volume">
