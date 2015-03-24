@@ -110,10 +110,10 @@ $streamclass = ($stream == "hd2")?"hd2":"onair"; ?>
 					</li>
 				</ul>
 			</div>
+			<!--
 			<div id="stream-player-group">
 				<div class="widget" id="stream-now-playing">
 					<h4>WREK Program Stream</h4>
-					<h5 id="stream-show"><a href="/shows/" target="_blank"><?=($stream == "hd2")?"HD2":"Unknown"?></a></h5>
 					<span id="stream-song"></span>
 					<span class="widget-links" id="stream-now-links">
 						<a href="/schedule/" target="_blank">Schedule</a> | <a href="/playlist/" target="_blank">Playlist</a> | <a href="/shows/" target="_blank">Shows</a> | <a href="/library/" target="_blank">Library</a> | <a href="/archive/" target="_blank">Archive</a>
@@ -124,6 +124,54 @@ $streamclass = ($stream == "hd2")?"hd2":"onair"; ?>
 					<a href="http://www.wrek.org/donate/" id="stream-support" target="_blank">Support WREK</a>
 				</div>
 			</div>
+			-->
+			<div class="sm2-bar-ui  flat full-width">
+			 <div class="bd sm2-main-controls">
+			  <div class="sm2-inline-texture"></div>
+			  <div class="sm2-inline-gradient"></div>
+			  <div class="sm2-inline-element sm2-button-element">
+			    <div class="sm2-button-bd">
+			    <div class="sm2-progress-ball"><div class="icon-overlay"></div></div>
+			    <a href="#play" class="sm2-inline-button play-pause">Play / pause</a>
+			   </div>
+			  </div>
+			  <div class="sm2-inline-element sm2-inline-status">
+			   <div class="sm2-playlist">
+			    <div class="sm2-playlist-target">
+			     <!-- playlist <ul> + <li> markup will be injected here -->
+			     <!-- if you want default / non-JS content, you can put that here. -->
+			     <noscript><p>JavaScript is required.</p></noscript>
+			    </div>
+			   </div>
+			   <div class="sm2-progress">
+			   </div>
+			  </div>
+			  <div class="sm2-inline-element sm2-button-element sm2-volume">
+			   <div class="sm2-button-bd">
+			    <span class="sm2-inline-button sm2-volume-control volume-shade"></span>
+			    <a href="#volume" class="sm2-inline-button sm2-volume-control">volume</a>
+			   </div>
+			  </div>
+			 </div>
+			 <div class="bd sm2-playlist-drawer sm2-element">
+			  <div class="sm2-inline-texture">
+			   <div class="sm2-box-shadow"></div>
+			  </div>
+			  <div class="sm2-playlist-wrapper">
+			    <ul class="sm2-playlist-bd">
+			    <li id="onair">
+			      <a href="http://streaming.wrek.org:8000/main/128kb.mp3">
+			        <b><span id="stream-show"></span></b>
+			        <span id="stream-song"></span>
+			      </a>
+			    </li>
+			    </ul>
+			  </div>
+
+			 </div>
+
+			</div>
+
 		</div>
 		<div class="grid_8" id="sidebar">
 			<div class="widget clearfix" id="stream-playlist">
