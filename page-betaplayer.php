@@ -53,8 +53,8 @@
 		#stream-options li { float: left; width: 150px; height: 24px; }
 		#stream-options li a { background: #F1F1F1; display: block; color: #000; font-size: 12px; line-height: 20px; font-weight: bold; padding: 2px 5px; }
 		#stream-options li a:hover { background: #835B6C; color: #fff; }
-		#stream-options li ul { position: absolute; left: -999em; }
-		#stream-options li:hover ul { left: auto; bottom: 24px; }
+		/*#stream-options li ul { position: absolute; left: -999em; }
+		#stream-options li:hover ul { left: auto; bottom: 24px; }*/
 		#stream-options li:hover li { border-bottom: 1px #fff solid; }
 		#arrow { border-left: 1px solid #FFFFFF;
 		color: #835B6C;
@@ -129,7 +129,7 @@ switch($stream) {
 			
 			<div id="stream-player-group">
 				<div class="widget" id="stream-now-playing">
-					<h4>WREK Program Stream</h4>
+					<h4>now playing/h4>
 					<span id="stream-song"></span>
 					<span class="widget-links" id="stream-now-links">
 						<a href="/schedule/" target="_blank">Schedule</a> | <a href="/playlist/" target="_blank">Playlist</a> | <a href="/shows/" target="_blank">Shows</a> | <a href="/library/" target="_blank">Library</a> | <a href="/archive/" target="_blank">Archive</a>
