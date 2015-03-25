@@ -54,8 +54,8 @@
 		#stream-options li a { background: #F1F1F1; display: block; color: #000; font-size: 12px; line-height: 20px; font-weight: bold; padding: 2px 5px; }
 		#stream-options li a:hover { background: #835B6C; color: #fff; }
 		/*#stream-options li ul { position: absolute; left: -999em; }
-		#stream-options li:hover ul { left: auto; bottom: 24px; }*/
-		#stream-options li:hover li { border-bottom: 1px #fff solid; }
+		#stream-options li:hover ul { left: auto; bottom: 24px; }
+		#stream-options li:hover li { border-bottom: 1px #fff solid; }*/
 		#arrow { border-left: 1px solid #FFFFFF;
 		color: #835B6C;
 		float: right;
@@ -117,13 +117,11 @@ switch($stream) {
 					<img src="<?php bloginfo('template_directory'); ?>/images/tinylogo.png" alt="<?php bloginfo('name'); ?>" />
 				</a>
 				<ul id="stream-options" class="grid_4 prefix_2">
-					<li><a href="?stream=128kbps">Pick a Stream <span id="arrow">&#x25B2;</span></a>
-						<ul id="stream-list" class="clearfix">
-							<li><a href="?stream=128kbps">On Air (Hi-Fi)</a></li>
-							<li><a href="?stream=24kbps">On Air (Lo-Fi)</a></li>
-							<li><a href="?stream=hd2">HD2</a></li>
-						</ul>
-					</li>
+					<ul id="stream-list" class="clearfix">
+						<li><a href="?stream=128kbps">On Air (Hi-Fi)</a></li>
+						<li><a href="?stream=24kbps">On Air (Lo-Fi)</a></li>
+						<li><a href="?stream=hd2">HD2</a></li>
+					</ul>	
 				</ul>
 			</div>
 			
