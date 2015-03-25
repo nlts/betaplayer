@@ -74,7 +74,7 @@
 		}
 		.sm2-bar-ui .sm2-main-controls,
 		.sm2-bar-ui .sm2-playlist-drawer {
-		 background-color: #FFF;
+		 background-color: #57585B;
 		}
 		.container {
 			max-width: 720px;
@@ -178,8 +178,10 @@ switch($stream) {
 			    <ul class="sm2-playlist-bd">
 			    <li id="onair">
 			      <a href=<?=$stream_url?>>
+			      <!--
 			        <b><span id="stream-show"></span></b>
 			        <span id="stream-song"></span>
+			        -->
 			      </a>
 			    </li>
 			    </ul>
