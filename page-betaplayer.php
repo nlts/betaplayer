@@ -123,7 +123,7 @@ switch($stream) {
 					</li>
 				</ul>
 			</div>
-			<!--
+			
 			<div id="stream-player-group">
 				<div class="widget" id="stream-now-playing">
 					<h4>WREK Program Stream</h4>
@@ -132,14 +132,7 @@ switch($stream) {
 						<a href="/schedule/" target="_blank">Schedule</a> | <a href="/playlist/" target="_blank">Playlist</a> | <a href="/shows/" target="_blank">Shows</a> | <a href="/library/" target="_blank">Library</a> | <a href="/archive/" target="_blank">Archive</a>
 					</span>	
 				</div>
-				<div id="stream-flash-player">
-					<iframe src="/wp-content/scripts/ffmp3/player.php?stream=<?=$stream?>" width="209" height="30" scrolling="no" id="stream-frame" frameborder="0">Sorry, you need support for iframes and flash!</iframe>
-					<a href="http://www.wrek.org/donate/" id="stream-support" target="_blank">Support WREK</a>
-				</div>
-			</div>
-			-->
-
-			<div class="sm2-bar-ui  flat full-width">
+				<div class="sm2-bar-ui  flat full-width">
 			 <div class="bd sm2-main-controls">
 			  <div class="sm2-inline-texture"></div>
 			  <div class="sm2-inline-gradient"></div>
@@ -195,6 +188,10 @@ switch($stream) {
 			 </div>
 
 			</div>
+			</div>
+		
+
+			
 
 		</div>
 		<div class="one-half column feature" id="sidebar">
