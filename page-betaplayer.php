@@ -78,6 +78,7 @@
 		}
 		.column {
 			min-width: 300px;
+			max-width: 350px;
 		}
 		.container {
 			max-width: 720px;
