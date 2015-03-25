@@ -76,10 +76,6 @@
 		.sm2-bar-ui .sm2-playlist-drawer {
 		 background-color: #2288cc;
 		}
-
-		.column {
-			width: 350px;
-		}
 		.container {
 			max-width: 720px;
 		}
