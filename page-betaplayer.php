@@ -74,7 +74,7 @@
 		}
 		.sm2-bar-ui .sm2-main-controls,
 		.sm2-bar-ui .sm2-playlist-drawer {
-		 background-color: #2288cc;
+		 background-color: #FFF;
 		}
 		.container {
 			max-width: 720px;
