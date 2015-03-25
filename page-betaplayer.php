@@ -29,7 +29,7 @@
 			transition: all .2 ease-in;
 		}
 		html, body { height: auto; }
-		body { margin-top: 10px; }
+		body { margin-top: 10px; margin-right: 5px; margin-left: 5px; }
 		#widget_sp img { display: block; margin: 0 auto; }
 		.widget-hidden { display: none; }
 		#stream-now-playing h4 { text-transform: none; }
