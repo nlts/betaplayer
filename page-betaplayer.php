@@ -37,7 +37,7 @@
 		#stream-options { position: absolute; bottom: 0; right: 0; }
 		#player-top { position: relative; margin-bottom: 20px; }
 		#player-logo { height: 110px; }
-		#stream-now-playing { margin-bottom: 0px; }
+		#stream-now-playing { margin-bottom: 0px; line-height: 1.5rem; }
 		#stream-flash-player { border: 1px solid #DBDDDE; border-top: 0px none; background: #fff; height: 30px; }
 		#stream-now-links { margin-top: 27px; }
 		.stream-playlist-time { color: #835B6C; }
@@ -130,7 +130,7 @@ switch($stream) {
 			
 			<div id="stream-player-group">
 				<div class="widget" id="stream-now-playing">
-					<h4>now playing</h4>
+					<h4>WREK Program Stream</h4>
 					<h5 id="stream-show"><a href="/shows/" target="_blank"><?=($stream == "hd2")?"HD2":"Unknown"?></a></h5>
 					<span id="stream-song"></span>
 					<span class="widget-links" id="stream-now-links">
