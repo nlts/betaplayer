@@ -37,11 +37,12 @@
 		#stream-options { position: absolute; bottom: 0; right: 0; }
 		#player-top { position: relative; margin-bottom: 20px; }
 		#player-logo { height: 110px; }
-		#stream-now-playing { margin-bottom: 0px; line-height: 1.5rem; }
+		#stream-now-playing { margin-bottom: 0px; }
 		#stream-flash-player { border: 1px solid #DBDDDE; border-top: 0px none; background: #fff; height: 30px; }
 		#stream-now-links { margin-top: 27px; }
 		.stream-playlist-time { color: #835B6C; }
 		#stream-song a { color: #835B6C; font-weight: bold; }
+                #stream-show { line-height: 1.5rem; }
 		#stream-frame { border-right: 1px #DBDDDE solid; display: inline-block; float: left; }
 		#stream-support { display: inline-block; width: 138px; height: 30px; line-height: 30px; color: #835B6C; float: right; font-size: 15px; text-align: center; *display: block; }
 		#stream-support:hover, #player-menu li a:hover { text-decoration: underline; }
