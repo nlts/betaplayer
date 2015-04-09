@@ -131,6 +131,7 @@ switch($stream) {
 			<div id="stream-player-group">
 				<div class="widget" id="stream-now-playing">
 					<h4>now playing</h4>
+					<h5 id="stream-show"><a href="/shows/" target="_blank"><?=($stream == "hd2")?"HD2":"Unknown"?></a></h5>
 					<span id="stream-song"></span>
 					<span class="widget-links" id="stream-now-links">
 						<a href="/schedule/" target="_blank">Schedule</a> | <a href="/playlist/" target="_blank">Playlist</a> | <a href="/shows/" target="_blank">Shows</a> | <a href="/library/" target="_blank">Library</a> | <a href="/archive/" target="_blank">Archive</a>
