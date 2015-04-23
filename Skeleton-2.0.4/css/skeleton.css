@@ -400,7 +400,7 @@ there.
 
 .container {
   margin-left: 0;
-  margin-left: 0;
+  margin-right: 0;
 }
 
 @media (min-width: 792px) {
