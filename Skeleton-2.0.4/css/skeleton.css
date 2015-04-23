@@ -398,6 +398,17 @@ on small devices, paste the mobile query code up in the buttons section and styl
 there.
 */
 
+.container {
+  margin-left: 0;
+  margin-left: 0;
+}
+
+@media (min-width: 792px) {
+  .container {
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
 
 /* Larger than mobile */
 @media (min-width: 400px) {}
