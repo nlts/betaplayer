@@ -34,7 +34,7 @@
 		.widget-hidden { display: none; }
 		#stream-now-playing h4 { text-transform: none; }
 		#stream-playlist { height: 90px; overflow: auto; }
-		#stream-options { position: absolute; bottom: 0; right: 0; }
+		#stream-options { position: inherit; bottom: 0; right: 0; }
 		#player-top { position: relative; margin-bottom: 20px; }
 		#player-logo { height: 110px; }
 		#stream-now-playing { margin-bottom: 0px; }
@@ -94,6 +94,9 @@
 			font-weight: bold;
 			padding: 2px 5px;
 			height: 24px;
+			width: auto;
+			margin-bottom: -20px;
+			margin-top: -10px;
 		}
 		input.streamSelect:hover {
 			background: #835B6C;
