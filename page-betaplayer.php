@@ -119,13 +119,20 @@ switch($stream) {
 					<img src="<?php bloginfo('template_directory'); ?>/images/tinylogo.png" alt="<?php bloginfo('name'); ?>" />
 				</a>
 				<ul id="stream-options" class="grid_4 prefix_2">
-					<li><a href="?stream=128kbps">Pick a Stream <span id="arrow">&#x25B2;</span></a>
-						<ul id="stream-list" class="clearfix">
-							<li><a href="?stream=128kbps">On Air (Hi-Fi)</a></li>
-							<li><a href="?stream=24kbps">On Air (Lo-Fi)</a></li>
-							<li><a href="?stream=hd2">HD2</a></li>
-						</ul>
-					</li>
+					<a href="?stream=128kbps">Pick a Stream 
+						<span id="arrow">▲</span>
+					</a>
+					<ul id="stream-list" class="clearfix">
+						<form action="?stream=128kbps">
+							<input type="submit" value="On Air (Hi-Fi)">
+						</form>
+						<form action="?stream=24kbps">
+							<input type="submit" value="On Air (Lo-Fi)">
+						</form>
+						<form action="?stream=hd2">
+							<input type="submit" value="HD2">
+						</form>
+					</ul>
 				</ul>
 			</div>
 			
