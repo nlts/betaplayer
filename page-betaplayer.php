@@ -119,8 +119,7 @@ switch($stream) {
 					<img src="<?php bloginfo('template_directory'); ?>/images/tinylogo.png" alt="<?php bloginfo('name'); ?>" />
 				</a>
 				<ul id="stream-options" class="grid_4 prefix_2">
-					<a href="?stream=128kbps">Pick a Stream 
-						<span id="arrow">▲</span>
+					<a href="?stream=128kbps">Pick a Stream<span id="arrow">▲</span>
 					</a>
 					<ul id="stream-list" class="clearfix">
 						<form><input type="button" value="On Air (Hi-Fi)"  onclick="location.href='?stream=128kbps'"></form>
