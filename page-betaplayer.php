@@ -84,6 +84,21 @@
 		.container {
 			max-width: 720px;
 		}
+
+		input.streamSelect {
+			background: #F1F1F1;
+			display: block;
+			color: #000;
+			font-size: 11px;
+			line-height: 20px;
+			font-weight: bold;
+			padding: 2px 5px;
+			height: 24px;
+		}
+		input.streamSelect:hover {
+			background: #835B6C;
+			color: #fff;
+		}
 	</style>
 	<script type="text/javascript">//<![CDATA[
 	// Google Analytics for WordPress by Yoast v4.1.3 | http://yoast.com/wordpress/google-analytics/
@@ -122,9 +137,9 @@ switch($stream) {
 					<a href="?stream=128kbps">Pick a Stream<span id="arrow">▲</span>
 					</a>
 					<ul id="stream-list" class="clearfix">
-						<form><input type="button" value="On Air (Hi-Fi)"  onclick="location.href='?stream=128kbps'"></form>
-						<form><input type="button" value="On Air (Lo-Fi)"  onclick="location.href='?stream=24kbps'"></form>
-						<form><input type="button" value="HD2"  onclick="location.href='?stream=hd2'"></form>
+						<form><input class="streamSelect" type="button" value="On Air (Hi-Fi)"  onclick="location.href='?stream=128kbps'"></form>
+						<form><input class="streamSelect" type="button" value="On Air (Lo-Fi)"  onclick="location.href='?stream=24kbps'"></form>
+						<form><input class="streamSelect" type="button" value="HD2"  onclick="location.href='?stream=hd2'"></form>
 					</ul>
 				</ul>
 			</div>
