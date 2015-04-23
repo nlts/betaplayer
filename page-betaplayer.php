@@ -123,15 +123,9 @@ switch($stream) {
 						<span id="arrow">▲</span>
 					</a>
 					<ul id="stream-list" class="clearfix">
-						<form action="?stream=128kbps">
-							<input type="submit" value="On Air (Hi-Fi)">
-						</form>
-						<form action="?stream=24kbps">
-							<input type="submit" value="On Air (Lo-Fi)">
-						</form>
-						<form action="?stream=hd2">
-							<input type="submit" value="HD2">
-						</form>
+						<a class="btn" href="?stream=128kbps">On Air (Hi-Fi)</a>
+						<a class="btn" href="?stream=24kbps">On Air (Lo-Fi)</a>
+						<a class="btn" href="?stream=hd2">HD2</a>
 					</ul>
 				</ul>
 			</div>
