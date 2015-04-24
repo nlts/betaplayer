@@ -33,7 +33,7 @@
 		#widget_sp img { display: block; margin: 0 auto; }
 		.widget-hidden { display: none; }
 		#stream-now-playing h4 { text-transform: none; }
-		#stream-playlist { min-height: 168px; max-height: 168px; overflow: auto; }
+		#stream-playlist { min-height: 140px; max-height: 140px; overflow: auto; }
 		#stream-options { position: inherit; bottom: 0; right: 0; }
 		#player-top { position: relative; margin-bottom: 20px; }
 		#player-logo { height: 110px; }
@@ -109,7 +109,7 @@
 			margin-right: 53px;
 			float:right;
 			width: 50px;
-			margin-top: -50px;
+			margin-top: -80px;
 		}
 	</style>
 	<script type="text/javascript">//<![CDATA[
