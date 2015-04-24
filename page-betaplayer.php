@@ -108,6 +108,7 @@
 		#stream-list {
 			float:right;
 			width: 50px;
+			margin-top: -50px;
 		}
 	</style>
 	<script type="text/javascript">//<![CDATA[
