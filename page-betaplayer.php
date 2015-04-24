@@ -106,6 +106,7 @@
 			padding-top: 0.4em;
 		}
 		#stream-list {
+			margin-right: 53px;
 			float:right;
 			width: 50px;
 			margin-top: -50px;
