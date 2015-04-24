@@ -33,7 +33,7 @@
 		#widget_sp img { display: block; margin: 0 auto; }
 		.widget-hidden { display: none; }
 		#stream-now-playing h4 { text-transform: none; }
-		#stream-playlist { height: 90px; overflow: auto; }
+		#stream-playlist { overflow: auto; }
 		#stream-options { position: inherit; bottom: 0; right: 0; }
 		#player-top { position: relative; margin-bottom: 20px; }
 		#player-logo { height: 110px; }
@@ -75,7 +75,7 @@
 		}
 		.sm2-bar-ui .sm2-main-controls,
 		.sm2-bar-ui .sm2-playlist-drawer {
-		 background-color: #57585B;
+		 background-color: #6795D0;
 		}
 		.column {
 			min-width: 300px;
@@ -101,6 +101,13 @@
 		input.streamSelect:hover {
 			background: #835B6C;
 			color: #fff;
+		}
+		.sm2-bar-ui {
+			padding-top: 0.4em;
+		}
+		#stream-list {
+			float:right;
+			width: 50px;
 		}
 	</style>
 	<script type="text/javascript">//<![CDATA[
@@ -136,15 +143,11 @@ switch($stream) {
 				<a href="<?php echo home_url( '/' ); ?>" target="_blank" id="player-logo">
 					<img src="<?php bloginfo('template_directory'); ?>/images/tinylogo.png" alt="<?php bloginfo('name'); ?>" />
 				</a>
-				<ul id="stream-options" class="grid_4 prefix_2">
-					<a href="?stream=128kbps">Pick a Stream<span id="arrow">▼</span>
-					</a>
-					<ul id="stream-list" class="clearfix">
+					<div id="stream-list" class="clearfix">
 						<form><input class="streamSelect" type="button" value="On Air (Hi-Fi)"  onclick="location.href='?stream=128kbps'"></form>
 						<form><input class="streamSelect" type="button" value="On Air (Lo-Fi)"  onclick="location.href='?stream=24kbps'"></form>
 						<form><input class="streamSelect" type="button" value="HD2"  onclick="location.href='?stream=hd2'"></form>
-					</ul>
-				</ul>
+					</div>
 			</div>
 			
 			<div id="stream-player-group">
