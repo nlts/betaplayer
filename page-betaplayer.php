@@ -33,7 +33,7 @@
 		#widget_sp img { display: block; margin: 0 auto; }
 		.widget-hidden { display: none; }
 		#stream-now-playing h4 { text-transform: none; }
-		#stream-playlist { overflow: auto; }
+		#stream-playlist { min-height: 153px; max-height: 153px; overflow: auto; }
 		#stream-options { position: inherit; bottom: 0; right: 0; }
 		#player-top { position: relative; margin-bottom: 20px; }
 		#player-logo { height: 110px; }
@@ -215,15 +215,10 @@ switch($stream) {
 			    </li>
 			    </ul>
 			  </div>
-
 			 </div>
-
 			</div>
 			</div>
 		
-
-			
-
 		</div>
 		<div class="one-half column feature" id="sidebar">
 			<div class="widget clearfix" id="stream-playlist">
