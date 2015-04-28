@@ -69,7 +69,7 @@
 		display: block;
 		*display: none; }
 		#stream-options a:hover #arrow { color: #fff; }
-		#stream-support {
+		#stream-donate {
 			  font-size: 1.2em;
 			  margin: 0 auto;
 			  font-weight: 400;
@@ -178,7 +178,7 @@ switch($stream) {
 			   </div>
 			  </div>
 			  <div class="sm2-inline-element sm2-inline-status">
-			   <div id="stream-support">
+			   <div id="stream-donate">
 			    <a href="http://www.wrek.org/donate/" target="_blank">Support WREK</a>
 			   </div>
 			   <div class="sm2-progress" style="display:none;">
