@@ -242,12 +242,7 @@ switch($stream) {
 		</div>
 	</div>
 	<script type="text/javascript">
-		jQuery( document ).ready(function() {
-			var a = jQuery('#play')[0];
-			var evObj = document.createEvent('MouseEvents');
-			evObj.initMouseEvent('click', true, true, window);
-			a.dispatchEvent(evObj);	
-		});
+		
 	</script>
 	<script type="text/javascript" src="<?php bloginfo('template_url'); ?>/js/player.js"></script>
 </body>

@@ -23,7 +23,10 @@
   });
 
   soundManager.onready(function() {
-
+	var a = jQuery('#play')[0];
+	var evObj = document.createEvent('MouseEvents');
+	evObj.initMouseEvent('click', true, true, window);
+	a.dispatchEvent(evObj);	
     var nodes,
       i, j;
 
