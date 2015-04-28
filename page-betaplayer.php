@@ -12,7 +12,7 @@
 	<?php wp_enqueue_script('jquery'); ?>
 	<script type="text/javascript" src="http://www3.eng.wrek.org/wp-includes/js/jquery/jquery.js"></script>
 	<script type="text/javascript" src="<?php bloginfo('wpurl'); ?>/wp-content/plugins/song-request/widget.js"></script>
-	<script type="text/javascript" src="<?php bloginfo('template_url'); ?>/script/soundmanager2.js"></script>
+	<script type="text/javascript" src="<?php bloginfo('template_url'); ?>/script/soundmanager2-nodebug-jsmin.js"></script>
 	<script type="text/javascript" src="<?php bloginfo('template_url'); ?>/script/bar-ui.js"></script>
 	<style type="text/css">
 		#player-logo { background: url('<?php bloginfo('template_directory'); ?>/images/tinylogopurple.png'); width: 110px; height: 110px; display: block }
