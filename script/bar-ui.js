@@ -895,7 +895,6 @@
 
 	        utils.css.remove(dom.o, 'playing');
 
-	        dom.progress.style.left = '0%';
 
 	        lastIndex = playlistController.data.selectedIndex;
 
@@ -907,7 +906,6 @@
 
 	          playlistController.select(item);
 
-	          setTitle(item);
 
 	          // play next
 	          this.play({
@@ -920,9 +918,7 @@
 	          // this.stop();
 
 	        }*/
-
-	      },
-	      autoPlay: true
+	      }
 	    });
 
 	    return sound;
