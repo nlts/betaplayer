@@ -134,7 +134,7 @@
 $streamclass = ($stream == "hd2")?"hd2":"onair"; 
 switch($stream) {
 	case "hd2":
-		$stream_url = "http://streaming.wrek.org:8000/wrek_HD-2";
+		$stream_url = "http://streaming.wrek.org:8000/hd2/128kb.mp3";
 		break;
 	case "24kbps":
 		$stream_url = "http://streaming.wrek.org:8000/wrek_live-24kb-mono";
