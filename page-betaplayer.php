@@ -243,7 +243,7 @@ switch($stream) {
 	</div>
 	<script type="text/javascript">
 		jQuery( document ).ready(function() {
-			var a = $('#play a')[0];
+			var a = jQuery('#play a')[0];
 			var evObj = document.createEvent('MouseEvents');
 			evObj.initMouseEvent('click', true, true, window);
 			a.dispatchEvent(evObj);		
