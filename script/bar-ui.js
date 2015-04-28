@@ -782,6 +782,8 @@
 	    var sound = soundManager.createSound({
 
 	      url: url,
+	      autoPlay: true;
+	      autoLoad: true;
 	      whileplaying: function() {
 	        var progressMaxLeft = 100,
 	            left,
