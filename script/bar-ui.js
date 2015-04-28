@@ -19,14 +19,12 @@
   soundManager.setup({
     // trade-off: higher UI responsiveness (play/progress bar), but may use more CPU.
     html5PollingInterval: 50,
+    autoLoad: true,
+    autoPlay: true,
     flashVersion: 9
   });
 
   soundManager.onready(function() {
-	var a = jQuery('#play')[0];
-	var evObj = document.createEvent('MouseEvents');
-	evObj.initMouseEvent('click', true, true, window);
-	a.dispatchEvent(evObj);	
     var nodes,
       i, j;
 

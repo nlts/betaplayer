@@ -242,7 +242,7 @@ switch($stream) {
 		</div>
 	</div>
 	<script type="text/javascript">
-		
+
 	</script>
 	<script type="text/javascript" src="<?php bloginfo('template_url'); ?>/js/player.js"></script>
 </body>
