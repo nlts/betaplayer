@@ -243,11 +243,17 @@ switch($stream) {
 	</div>
 	<script type="text/javascript">
 		soundManager.onready(function() {
-			var a = jQuery('#play')[0];
-			var evObj = document.createEvent('MouseEvents');
-			evObj.initMouseEvent('click', true, true, window);
-			a.dispatchEvent(evObj);	
+			var isMobile = window.matchMedia("only screen and (max-width: 760px)");
+				if (!isMobile.matches) {
+				var a = jQuery('#play')[0];
+				var evObj = document.createEvent('MouseEvents');
+				evObj.initMouseEvent('click', true, true, window);
+				a.dispatchEvent(evObj);	
+			}
+
 		});
+
+    
 		jQuery(document).ready(function() {
 	        jQuery(document).keydown(function(e) {
 	          if (e.keyCode == '32' || e.keyCode == '0') {
