@@ -922,7 +922,7 @@
 	        }*/
 
 	      }
-	      autoplay: true
+	      autoPlay: true
 
 	    });
 
