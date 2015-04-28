@@ -69,7 +69,13 @@
 		display: block;
 		*display: none; }
 		#stream-options a:hover #arrow { color: #fff; }
-
+		#stream-support {
+			  font-size: 1.2em;
+			  margin: 0 auto;
+			  font-weight: 400;
+			  float: right;
+			  width: 80%;
+		}
 		.sm2-bar-ui {
 		 font-size: 16px;
 		}
@@ -172,12 +178,8 @@ switch($stream) {
 			   </div>
 			  </div>
 			  <div class="sm2-inline-element sm2-inline-status">
-			   <div class="sm2-playlist">
-			    <div class="sm2-playlist-target">
-			     <!-- playlist <ul> + <li> markup will be injected here -->
-			     <!-- if you want default / non-JS content, you can put that here. -->
-			     <noscript><p>JavaScript is required.</p></noscript>
-			    </div>
+			   <div id="stream-support">
+			    <a href="http://www.wrek.org/donate/" target="_blank">Support WREK</a>
 			   </div>
 			   <div class="sm2-progress" style="display:none;">
 			    <div class="sm2-row">

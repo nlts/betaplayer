@@ -922,6 +922,7 @@
 	        }*/
 
 	      }
+	      autoplay: true
 
 	    });
 
