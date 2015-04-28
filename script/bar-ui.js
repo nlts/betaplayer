@@ -852,23 +852,23 @@
 
 	        item = playlistController.getItem();
 
-	        if (item) {
+	        // if (item) {
 
-	          // note error, delay 2 seconds and advance?
-	          // playlistTarget.innerHTML = '<ul class="sm2-playlist-bd"><li>' + item.innerHTML + '</li></ul>';
+	        //   // note error, delay 2 seconds and advance?
+	        //   // playlistTarget.innerHTML = '<ul class="sm2-playlist-bd"><li>' + item.innerHTML + '</li></ul>';
 
-	          if (extras.loadFailedCharacter) {
-	            dom.playlistTarget.innerHTML = dom.playlistTarget.innerHTML.replace('<li>' ,'<li>' + extras.loadFailedCharacter + ' ');
-	            if (playlistController.data.playlist && playlistController.data.playlist[playlistController.data.selectedIndex]) {
-	              element = playlistController.data.playlist[playlistController.data.selectedIndex].getElementsByTagName('a')[0];
-	              html = element.innerHTML;
-	              if (html.indexOf(extras.loadFailedCharacter) === -1) {
-                  	element.innerHTML = extras.loadFailedCharacter + ' ' + html;
-                  }
-	            }
-	          }
+	        //   if (extras.loadFailedCharacter) {
+	        //     dom.playlistTarget.innerHTML = dom.playlistTarget.innerHTML.replace('<li>' ,'<li>' + extras.loadFailedCharacter + ' ');
+	        //     if (playlistController.data.playlist && playlistController.data.playlist[playlistController.data.selectedIndex]) {
+	        //       element = playlistController.data.playlist[playlistController.data.selectedIndex].getElementsByTagName('a')[0];
+	        //       html = element.innerHTML;
+	        //       if (html.indexOf(extras.loadFailedCharacter) === -1) {
+         //          	element.innerHTML = extras.loadFailedCharacter + ' ' + html;
+         //          }
+	        //     }
+	        //   }
 
-	        }
+	        // }
 
 	        // load next, possibly with delay.
             

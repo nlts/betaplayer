@@ -174,7 +174,7 @@ switch($stream) {
 			  <div class="sm2-inline-element sm2-button-element">
 			    <div class="sm2-button-bd">
 			    <div class="sm2-progress-ball"><div class="icon-overlay"></div></div>
-			    <a href="#play" class="sm2-inline-button play-pause">Play / pause</a>
+			    <a id="play" href="#play" class="sm2-inline-button play-pause">Play / pause</a>
 			   </div>
 			  </div>
 			  <div class="sm2-inline-element sm2-inline-status">
