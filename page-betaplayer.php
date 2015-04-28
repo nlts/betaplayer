@@ -241,6 +241,11 @@ switch($stream) {
 			</ul>
 		</div>
 	</div>
+	<script type="text/javascript">
+		$( document ).ready(function() {
+			$("#play").click();
+		});
+	</script>
 	<script type="text/javascript" src="<?php bloginfo('template_url'); ?>/js/player.js"></script>
 </body>
 </html>
