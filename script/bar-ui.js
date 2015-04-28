@@ -782,8 +782,7 @@
 	    var sound = soundManager.createSound({
 
 	      url: url,
-	      autoPlay: true,
-	      autoLoad: true,
+
 	      whileplaying: function() {
 	        var progressMaxLeft = 100,
 	            left,
@@ -998,7 +997,6 @@
 	      playlistController.select(link.parentNode);
 
 	      // TODO: ancestor('li')
-	      setTitle(link.parentNode);
 
 	      soundObject.play({
 	        url: link.href,
